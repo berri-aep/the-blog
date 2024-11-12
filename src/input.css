@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    body{
+        @apply font-poppins overflow-x-hidden bg-dark text-light;
+    }
+
+
+    .container{
+        @apply max-w-[1200px] w-full px-[1.5rem] lg:px-[10rem] mx-auto;
+    }
+
+    :root{
+    --dark: #000;
+    --light: #fff;
+
+    }
+}
+
+@layer components{
+    /* HEADER */
+    .header__theme{
+        @apply cursor-pointer text-xl;
+    }
+
+    .bigcard--text small p{
+        @apply text-gray font-bold;
+    }
+
+    .bigcard--text h3{
+        @apply font-bold;
+    }
+
+
+    .bigcard{
+        @apply flex flex-col;
+    }
+
+    .smallCard img{
+        @apply w-[19rem];
+    }
+
+    .smallCard--text small p{
+        @apply text-gray font-bold;
+    }
+
+    .smallCard--text h3{
+        @apply font-bold;
+    }
+
+
+}
+
+
